@@ -35,7 +35,6 @@ class ImageAdminForm(forms.ModelForm):
     def _set_previous_subject_location(self, cleaned_data):
         subject_location = self.instance.subject_location
         cleaned_data['subject_location'] = subject_location
-        self.data = self.data.copy()
         self.data['subject_location'] = subject_location
 
     def clean_subject_location(self):

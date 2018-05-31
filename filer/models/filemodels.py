@@ -79,8 +79,7 @@ class File(PolymorphicModel, mixins.IconsMixin):
         default=is_public_default,
         verbose_name=_('Permissions disabled'),
         help_text=_('Disable any permission checking for this '
-                    'file. File will be publicly accessible '
-                    'to anyone.'))
+                    'file. File will be publicly accessible.'))
 
     objects = FileManager()
 
